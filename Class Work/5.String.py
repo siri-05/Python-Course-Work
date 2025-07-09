@@ -5,6 +5,9 @@ s="Siri"
 print(s)
 s='''Siri'''
 print(s)
+s='''Saragadam
+Sirisha'''
+print(s)
 
 fname='Saragadam'
 lname='Sirisha'
@@ -80,3 +83,11 @@ print("Join list to string: ","".join(p))
 p='Python programming'
 print("Partition of string: ",p.partition("o"))
 print("Reverse partition of string: ",p.rpartition("o"))
+p="       Python programming           "
+print("Strip whitespaces: ",p.strip())
+print("Strip left whiespaces: ",p.lstrip())
+print("Strip right whitespaces: ",p.rstrip())
+p="Hello नमते你好 café 🙂"
+print("Encode(string to byte): ",p.encode())
+p=b'Hello \xe0\xa4\xa8\xe0\xa4\xae\xe0\xa4\xa4\xe0\xa5\x87\xe4\xbd\xa0\xe5\xa5\xbd caf\xc3\xa9 \xf0\x9f\x99\x82'
+print("Decode(byte to string): ",p.decode())

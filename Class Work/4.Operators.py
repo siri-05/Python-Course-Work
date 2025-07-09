@@ -55,6 +55,6 @@ print("\n**Identity Operations**\nMemory allocation of a: ",id(a),
 
 #Bitwise Operators
 a=5
-b=3
+b=10
 print("\n**Bitwise Operations**\nAND: ",a&b,"\nOR: ",a|b,"\nXOR: ",a^b,
-      "\nNOT: ",~a,"\nLeft shift: ",a<<1,"\nRight shift: ",b>>1)
+      "\nNOT: ",~a,"\nLeft shift(a*(2^n)): ",a<<1,"\nRight shift(b/(2^n)): ",b>>1)

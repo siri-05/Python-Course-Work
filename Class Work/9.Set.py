@@ -1,0 +1,47 @@
+#Unordered, Indexed, Immutable and doesn't allows duplicates and mutable elements
+s=set()
+s={1,2,3,2.3,"Siri",3+4j,('w','t',5,2,6),2,7,2,6,3,6,False}
+print("Set: ",s)
+print("Membership in set: ",1 in s,"    ",3+4j not in s)
+s1={1,5,2,5,2,5,8,4,9,4,'false','true'}
+s2={'Siri','Likki','Hitha','Sravani',1,5,7,3,7,2,6,3,4,8,9}
+print("Union of sets: ",s1|s2,"    ",s1.union(s2))
+print("Intersection of sets: ",s1&s2,"    ",s1.intersection(s2))
+print("Difference between sets: ",s2-s1,"   ",s2.difference(s1))
+print("Symmetric difference of sets: ",s1^s2,"  ",s1.symmetric_difference(s2))
+print("Subset: ",s1<=s2,"   ",s1.issubset(s2))
+print("Superset: ",s2>=s1,"    ",s2.issuperset(s1))
+print("Disjoint sets: ",s1.isdisjoint(s2))
+s.add(9)
+print("Adding elements in set: ",s)
+s.update({'a','three'})
+print("Adding multiple elements in set: ",s1)
+s1.intersection_update(s2)
+print("Update the intersection elements in set: ",s1)
+s2.difference_update(s1)
+print("Update difference elements in set: ",s2)
+s1={1,5,2,5,2,5,8,4,9,4,'false','true'}
+s2={'Siri','Likki','Hitha','Sravani',1,5,7,3,7,2,6,3,4,8,9}
+s1.symmetric_difference_update(s2)
+print("Update symmetric difference elements in set: ",s1)
+s={1,7,2,7,2,7,9,0,5,3,4,6,9,0,2}
+print("Length of tuple: ",len(s))
+print("Sort the elements in the list: ",sorted(s))
+print("Maximum in the tuple: ",max(s))
+print("Minimum in the tuple: ",min(s))
+print("Sum of elements: ",sum(s))
+t=s.copy()
+t.add(8)
+print("Shallow copy : ",t,"    ",s)
+t=s
+t.add(8)
+print("Deep copy: ",t,"    ",s)
+s.remove(2)
+print("Remove element from set: ",s)
+s.discard(2+3j)
+print("Remove element from set if we don't know if element is present in set: ",s)
+print("Remove random element of set: ",s.pop())
+s.clear()
+print("Remove all elements from set: ",s)
+s=frozenset({1,5,2,6,8,9,4,0})
+print("Frozenset: ",s)

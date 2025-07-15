@@ -1,0 +1,18 @@
+productID=int(input("Enter Product ID: "))
+productName=input("Enter Product Name: ")
+price=float(input("Enter Price: "))
+categories=input("Enter Categories(comma-separated): ").split(',')
+availableStock=int(input("Enter Available Stock: "))
+soldStock=int(input("Enter Sold Stock: "))
+stockDetails=(availableStock,soldStock)
+discount=float(input("Enter Discount Percentage: "))
+productFeatures=set(input("Enter Product Features(comma-separated): ").split(','))
+supplierName=input("Enter Supplier Name: ")
+supplierContact=input("Enter Supplier Contact Number: ")
+supplierLocation=input("Enter Supplier Location: ")
+supplierDetails={"Name":supplierName,"Contact":supplierContact,"Location":supplierLocation}
+
+print("Product ID, Name, Price: ",productID,", ",productName,", ",price)
+print("Product Discount : %0.2f"%discount,"%")
+print(f"Product Name: {productName}\nPrice: ₹{price}\nDiscount: {discount}%\nStock Available: {availableStock} units")
+print("Supplier Details: Name - {}, Contact - {}, Location - {}".format(supplierDetails["Name"],supplierDetails["Contact"],supplierDetails["Location"]))
